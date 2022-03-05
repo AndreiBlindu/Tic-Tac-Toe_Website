@@ -5,6 +5,8 @@ require('dotenv').config({ path: './.env' });
 const express = require('express');
 const app = express();
 const port = 5000;
+const bodyParser = require('body-parser');
+app.use(bodyParser.json());
 var cors = require('cors');
 app.use(cors());
 
@@ -26,8 +28,8 @@ const sequelize = require('./utils/database');
 
 // Sync with database and create tables by mapping our models into database tables
 sequelize
-//.sync()
-.sync({force: true})    // in case the database tables are already created we drop and recreate them if we changed their schema
+.sync()
+//.sync({force: true})    // in case the database tables are already created we drop and recreate them if we changed their schema
 .then((result) => {
     console.log(result);
 })
@@ -49,9 +51,20 @@ app.get('/play', (req, res) => {
 });
 
 app.get('/about', (req, res) => {
-    //res.sendFile(__dirname + '/views/about.html')
     res.render('about')
 });
+
+app.get('/login', (req, res) => {
+    res.render('login');
+});
+
+app.get('/sign-up', (req, res) => {
+    res.render('sign-up')
+});
+
+// Connect the app to the API routes endpoints
+require('./routes/user.routes')(app);
+require('./routes/session.routes')(app);
 
 
 app.listen(port, () => console.log('Running on http://localhost:'+port));

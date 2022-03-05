@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Play Tic-Tac-Toe</title>
+        <link rel="stylesheet" href="/css/main.css" type="text/css">
+        <link rel="stylesheet" href="/css/form-style.css" type="text/css">
+    </head>
+    <body>
+        <script src="/js/sign-up.js"></script>
+        
+        <header>
+            <%- include('partials/header') %>
+        </header>
+
+        <main>
+            <div class="form-container">
+                <form>
+                    <label for="username">Username: </label>
+                    <input type="text" name="username" id="username"><br>
+                    <label for="email">Email: </label>
+                    <input type="text" name="email" id="email"><br>
+                    <label for="password">Password: </label>
+                    <input type="password" name="password" id="password"><br>
+                    <button id="buttonSignup" type="button" onclick="signup()">Sign-up</button>
+                </form>
+                <p id="signupError"></p>
+            </div>
+        </main>
+
+        <footer>
+            <%- include('partials/footer') %>
+        </footer>
+    </body>
+</html>
