@@ -1,0 +1,49 @@
+
+header {
+    text-align: center;
+    position: fixed;
+    height: 6vh;
+    width: 100%;
+    z-index: 1;
+}
+
+header ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+
+    margin: 0%;
+    padding: 3px;
+    background-color: cornflowerblue;
+}
+
+a.nav-link {
+    text-decoration: none;
+}
+
+main {
+    position: relative;
+    top: 6vh;
+    text-align: center;
+}
+
+footer {
+    position: relative;
+    bottom: 0px;
+}
+
+#rules {
+    list-style-position: inside;
+}
+  
+/* Only if user's device screen is less than 680px */
+@media only screen and (max-width: 680px) {
+    header ul {
+        flex-direction: column;
+    }
+
+    main {
+        top: 10vh;
+    }
+}

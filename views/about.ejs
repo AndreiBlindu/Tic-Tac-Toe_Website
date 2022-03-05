@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>History and Rules of Tic-Tac-Toe</title>
+        <link rel="stylesheet" href="/css/main.css" type="text/css">
+    </head>
+    <body>
+        <header>
+            <%- include('partials/header') %>
+        </header>
+
+        <main>
+            <section>
+                <h2>History of the game</h2>
+                <p>
+                    Some ascribe the origin of Tic-Tac-Toe to the ancient Egyptians, 
+                    but the most concrete ancient record we have of the game is from the Romans, 
+                    and the game they referred to as terni lapilli, or three pebbles at a time. 
+                    With this said, the game wasn’t necessarily identical to how we play today. 
+                    Rather than writing down markings, it’s believed that the Romans would use tokens, 
+                    pieces, or pebbles, and move them around the grid to represent the different moves. 
+                    Much like today, you could see terni lapilli grids scrabbled all around ancient Roman cities. 
+                </p>
+                <p>
+                    How the game progressed beyond that is a bit more unclear. 
+                    Some say there are records of it being played in the Middle Ages, with a mystic attachment to it, 
+                    but the most concrete reappearance we have of it comes sometime later. 
+                    In the 18th century in England, record of a children’s game close to Tic-Tac-Toe 
+                    as we know it first appeared. While there isn’t a concrete understanding of what happened next, 
+                    most likely the game was passed onto American and other international shores via England’s 
+                    history of colonization and immigration.
+                </p>
+            </section>
+            <section>
+                <h2>Where Does the Name Come From?</h2>
+                <p>
+                    So, with all this said, how did the name progress to Tic-Tac-Toe? 
+                    Well, as it turns out, that name was originally ascribed to an entirely different game 
+                    that no longer exists. This game was played by throwing a pencil at a slate covered with 
+                    numbers, then assigning a score based on counting the numbers hit with the pencil. 
+                    Think of it like a strange variation of darts. Historians believe the name at the time, 
+                    Tit-Tat-Toe, came from the sound of the pencil hitting the board. With a slight Americanization 
+                    to Tic-Tac-Toe, the name would end up living on, even if the actual game wouldn’t. 
+                </p>
+            </section>
+            <section>
+                <h2>Tic-Tac-Toe Today</h2>
+                <p>
+                    Today, Tic-Tac-Toe is played worldwide, albeit not always under the same name. 
+                    When played in England, it’s generally referred to as “noughts and crosses,” 
+                    the same name it had when it first appeared on the scene in the 1800s. 
+                    Different regions in Ireland may switch between the names “X’s and O’s,” “Boxin’ Oxen,” and “X-e O-zees.”  
+                    In Norway, it’s called “Twiddles and Bears.” 
+                    The good news is that it’s pretty much played the same way in every country, so if you find yourself 
+                    in an airport, drawing up that famous board is a challenge everyone can recognize.
+                </p>
+                <p>
+                    As a comparison to the original terni lapilli, we draw lines to create nine-square grids. 
+                    With X starting the game, people try to mark the squares with Xs and Os, trying to get those three marks 
+                    in a row. However, there are a variety of more complex variants out there for those who want to try 
+                    their luck, including boards with four or five rows, or even taking the game into three dimensions using 
+                    special boards.
+                </p>
+            </section>
+            <section>
+                <h2>Rules for Tic-Tac-Toe</h2>
+                <p>
+                    <ol id="rules">
+                        <li>
+                            The game is played on a grid that's 3 squares by 3 squares.
+                        </li>
+                        <li>
+                            You are X, your friend (or the computer in this case) is O. 
+                            Players take turns putting their marks in empty squares.
+                        </li>
+                        <li>
+                            The first player to get 3 of her marks in a row (up, down, across, or diagonally) is the winner.
+                        </li>
+                        <li>
+                            When all 9 squares are full, the game is over. If no player has 3 marks in a row, the game ends in a tie.
+                        </li>
+                    </ol>
+                </p>
+            </section>
+            <section>
+                <h2>HOW CAN I WIN AT TIC-TAC-TOE?</h2>
+                <p>
+                    To beat the computer (or at least tie), you need to make use of a little bit of strategy. 
+                    Strategy means figuring out what you need to do to win.
+                </p>
+                <p>
+                    Part of your strategy is trying to figure out how to get three Xs in a row. 
+                    The other part is trying to figure out how to stop the computer from getting three Os in a row.
+                </p>
+                <p>
+                    After you put an X in a square, you start looking ahead. Where's the best place for your next X? 
+                    You look at the empty squares and decide which ones are good choices—which ones might let you make 
+                    three Xs in a row.
+                </p>
+                <p>
+                    You also have to watch where the computer puts its O. That could change what you do next. 
+                    If the computer gets two Os in a row, you have to put your next X in the last empty square in that row, 
+                    or the computer will win. You are forced to play in a particular square or lose the game.
+                </p>
+                <p>
+                    If you always pay attention and look ahead, you'll never lose a game of Tic-Tac-Toe. 
+                    You may not win, but at least you'll tie.
+                </p>
+            </section>
+        </main>
+
+        <footer>
+            <%- include('partials/footer') %>
+        </footer>
+    </body>
+</html>
