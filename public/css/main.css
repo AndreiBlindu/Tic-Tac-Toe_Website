@@ -15,11 +15,13 @@ header ul {
 
     margin: 0%;
     padding: 3px;
-    background-color: cornflowerblue;
+    background-color: darkblue;
+    color: aliceblue;
 }
 
 a.nav-link {
     text-decoration: none;
+    color: aliceblue;
 }
 
 main {
@@ -31,10 +33,9 @@ main {
 footer {
     position: relative;
     bottom: 0px;
-}
-
-#rules {
-    list-style-position: inside;
+    padding: 1% 0%;
+    background-color: darkblue;
+    color: aliceblue;
 }
   
 /* Only if user's device screen is less than 680px */

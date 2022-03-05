@@ -1,0 +1,49 @@
+body {
+    color: aliceblue;
+}
+
+.first_color {
+    background-color: hsla(234, 79%, 66%, 0.692);
+}
+
+.second_color {
+    background-color:rgb(17, 100, 182);
+}
+
+img {
+    width: 300px;
+    height: auto;
+}
+
+button {
+    width: 100px;
+    height: 70px;
+    background-color: darkblue;
+    color: aliceblue;
+    margin-top: 2%;
+}
+
+section {
+    padding-top: 2%;
+    padding-bottom: 5%;
+}
+
+.selling-points {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+ul {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Only if user's device screen is less than 680px */
+@media only screen and (max-width: 680px) {
+    .selling-points {
+        flex-direction: column;
+    }
+}
