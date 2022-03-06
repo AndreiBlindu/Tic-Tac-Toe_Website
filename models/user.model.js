@@ -31,6 +31,10 @@ const User = sequelize.define('user', {
     losses: {
         type: Sequelize.INTEGER,
         defaultValue: 0
+    },
+    draws: {
+        type: Sequelize.INTEGER,
+        defaultValue: 0
     }
 });
 

@@ -32,6 +32,18 @@ function addLoss() {
   })
 }
 
+function addDraw() {
+  const userId = localStorage.getItem('userId');
+  fetch(`http://localhost:5000/addDraw/${userId}`, {
+    method: 'PUT',
+    headers: {"Content-Type": "application/json"}
+  }).then((result) => {
+    console.log(result);
+  }).catch((error) => {
+    console.log(error);
+  })
+}
+
 check_board_complete = () => {
   let flag = true;
   play_board.forEach(element => {
@@ -85,6 +97,7 @@ const check_for_winner = () => {
   } else if (board_full) {
     winner.innerText = "Draw!";
     winner.classList.add("draw");
+    addDraw();
   }
 };
 
