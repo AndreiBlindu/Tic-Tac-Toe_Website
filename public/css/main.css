@@ -32,6 +32,7 @@ header img.icon {
     height: 3vh;
     width: auto;
     float: left;
+    margin-left: 0%;
 }
 
 main {

@@ -24,7 +24,14 @@ const User = sequelize.define('user', {
         type: Sequelize.STRING,
         allowNull: false
     },
-    
+    wins: {
+        type: Sequelize.INTEGER,
+        defaultValue: 0
+    },
+    losses: {
+        type: Sequelize.INTEGER,
+        defaultValue: 0
+    }
 });
 
 module.exports = User;

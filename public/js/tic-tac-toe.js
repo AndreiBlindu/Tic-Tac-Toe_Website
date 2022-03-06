@@ -8,6 +8,30 @@ const board_container = document.querySelector(".play-area");
 
 const winner_statement = document.getElementById("winner");
 
+function addWin() {
+  const userId = localStorage.getItem('userId');
+  fetch(`http://localhost:5000/addWin/${userId}`, {
+    method: 'PUT',
+    headers: {"Content-Type": "application/json"}
+  }).then((result) => {
+    console.log(result);
+  }).catch((error) => {
+    console.log(error);
+  })
+}
+
+function addLoss() {
+  const userId = localStorage.getItem('userId');
+  fetch(`http://localhost:5000/addLoss/${userId}`, {
+    method: 'PUT',
+    headers: {"Content-Type": "application/json"}
+  }).then((result) => {
+    console.log(result);
+  }).catch((error) => {
+    console.log(error);
+  })
+}
+
 check_board_complete = () => {
   let flag = true;
   play_board.forEach(element => {
@@ -52,10 +76,12 @@ const check_for_winner = () => {
     winner.innerText = "Winner is player!!";
     winner.classList.add("playerWin");
     board_full = true
+    addWin();
   } else if (res == computer) {
     winner.innerText = "Winner is computer";
     winner.classList.add("computerWin");
     board_full = true
+    addLoss();
   } else if (board_full) {
     winner.innerText = "Draw!";
     winner.classList.add("draw");

@@ -14,11 +14,13 @@ function login() {
         console.log(json);
         let token = json['token'];
         let expireDate = json['expireDate'];
+        let userId = json['userId'];
 
         if (token) {
-            // Save the session's token and expireDate into the localStorage
+            // Save the session's token, expireDate and userId into the localStorage
             localStorage.setItem('token', token);
             localStorage.setItem('expireDate', expireDate);
+            localStorage.setItem('userId', userId);
             // Redirect to home page
             window.location.href = '/';
         } else {

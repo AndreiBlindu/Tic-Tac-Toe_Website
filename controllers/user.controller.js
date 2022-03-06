@@ -19,3 +19,49 @@ exports.create = (req, res) => {
         });
     });
 };
+
+// Add win
+exports.addWin = (req, res) => {
+    const userId = req.params.userId;
+    
+    User.findByPk(userId)
+    .then(user => {
+        // Increment the wins counter
+        user.wins += 1
+        // Save the updated user into the database
+        user.save().then(updatedUser => {
+            res.send(updatedUser);
+        }).catch(err => {
+            res.status(500).send({
+                message: "Error updating user's wins"
+            });
+        });
+    }).catch(err => {
+        res.status(404).send({
+            message: 'User not found'
+        });
+    });
+};
+
+// Add loss
+exports.addLoss = (req, res) => {
+    const userId = req.params.userId;
+    
+    User.findByPk(userId)
+    .then(user => {
+        // Increment the wins counter
+        user.losses += 1
+        // Save the updated user into the database
+        user.save().then(updatedUser => {
+            res.send(updatedUser);
+        }).catch(err => {
+            res.status(500).send({
+                message: "Error updating user's losses"
+            });
+        });
+    }).catch(err => {
+        res.status(404).send({
+            message: 'User not found'
+        });
+    });
+}
