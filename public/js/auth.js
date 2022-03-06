@@ -12,8 +12,16 @@ function isExpired(expireDate) {
         let expireDate = localStorage.getItem('expireDate');
 
         if (!token || isExpired(expireDate)) {
+            document.getElementById("user-menu-text").innerHTML = "Login";
+            document.getElementById("user-route").href = "/login";
             // If the session is expired or there's no token we redirect to login
-            window.location.href = '/login';
+            // We check if we are already on login to avoid endless reloading loops
+            if (window.location.href != 'http://localhost:5000/login') {
+                window.location.href = '/login';
+            }
+        } else {
+            document.getElementById("user-menu-text").innerHTML = "User Area";
+            document.getElementById("user-route").href = "/user-area";
         }
     }
 })();
