@@ -59,7 +59,11 @@ app.get('/login', (req, res) => {
 });
 
 app.get('/sign-up', (req, res) => {
-    res.render('sign-up')
+    res.render('sign-up');
+});
+
+app.get('/user-area', (req, res) => {
+    res.render('user-area');
 });
 
 // Connect the app to the API routes endpoints

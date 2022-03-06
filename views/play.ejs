@@ -8,14 +8,21 @@
         <link rel="stylesheet" href="/css/play-style.css" type="text/css">
     </head>
     <body>
-        <script src="/js/play.js"></script>
+        <script src="/js/auth.js"></script>
         
         <header>
             <%- include('partials/header') %>
         </header>
 
         <main>
-            
+            <div class="container">
+                <h1>Tic-Tac-Toe</h1>
+                <div class="play-area">
+                </div>
+                <h2 id="winner"></h2>
+                <button onclick="reset_board()">RESET</button>
+            </div>
+            <script src="/js/tic-tac-toe.js"></script>
         </main>
 
         <footer>

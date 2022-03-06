@@ -10,6 +10,12 @@ body {
     background-color:rgb(17, 100, 182);
 }
 
+h1 {
+    font-size: 3.5em;
+    color: darkblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 img {
     width: 300px;
     height: auto;
@@ -24,7 +30,7 @@ button {
 }
 
 section {
-    padding-top: 2%;
+    padding-top: 1%;
     padding-bottom: 5%;
 }
 

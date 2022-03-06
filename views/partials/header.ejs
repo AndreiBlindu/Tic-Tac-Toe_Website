@@ -1,13 +1,22 @@
-<nav class="header">
-    <ul>
-      <li class="nav-item">
-        <a class="nav-link" href="/">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/play">Play</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/about">About</a>
-      </li>
-    </ul>
-  </nav>
+<header onload="headerOnload()">
+<nav class="header" >
+  <script src="/js/header.js"></script>
+  <ul>
+    <li class="nav-item">
+      <a class="nav-link" href="/">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/play">Play</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/about">About</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="user-route">
+        <img src="/img/icons/person-circle.svg" alt="user-icon" class="icon">
+        <span id="user-menu-text"></span>
+      </a>
+    </li>
+  </ul>
+</nav>
+</header>

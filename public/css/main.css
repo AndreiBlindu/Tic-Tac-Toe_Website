@@ -28,6 +28,12 @@ a.nav-link {
     color: aliceblue;
 }
 
+header img.icon {
+    height: 3vh;
+    width: auto;
+    float: left;
+}
+
 main {
     position: relative;
     top: 6vh;
@@ -50,5 +56,11 @@ footer {
 
     main {
         top: 10vh;
+    }
+
+    header li {
+        text-align: center;
+        padding-left: auto;
+        padding-right: auto;
     }
 }
