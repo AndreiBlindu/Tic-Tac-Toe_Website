@@ -37,12 +37,12 @@ header img.icon {
 
 main {
     position: relative;
-    top: 6vh;
+    top: 0;
     text-align: center;
 }
 
 footer {
-    position: relative;
+    position: absolute;
     bottom: 0px;
     padding: 1% 0%;
     background-color: darkblue;

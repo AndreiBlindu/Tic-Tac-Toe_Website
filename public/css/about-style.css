@@ -1,3 +1,9 @@
 #rules {
     list-style-position: inside;
 }
+
+section {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: hsla(234, 79%, 66%, 0.692);
+}
