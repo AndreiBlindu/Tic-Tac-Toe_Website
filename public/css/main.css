@@ -42,7 +42,7 @@ main {
 }
 
 footer {
-    position: absolute;
+    position: relative;
     bottom: 0px;
     padding: 1% 0%;
     background-color: darkblue;
