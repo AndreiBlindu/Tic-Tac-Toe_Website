@@ -1,6 +1,8 @@
 body {
     padding: 0;
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: hsla(234, 79%, 66%, 0.692);
 }
 
 header {
@@ -63,5 +65,9 @@ footer {
         text-align: center;
         padding-left: auto;
         padding-right: auto;
+    }
+
+    footer {
+        margin-top: 15%;
     }
 }

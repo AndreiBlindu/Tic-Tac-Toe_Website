@@ -13,3 +13,9 @@ table {
     margin-left: auto;
     margin-right: auto;
 }
+
+footer {
+    /*For short pages the footer position is better absolute*/
+    position: absolute;
+    width: 100%;
+}

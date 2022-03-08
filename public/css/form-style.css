@@ -1,5 +1,21 @@
 .form-container {
     margin-bottom: 10%;
-    padding-top: 5%;
+    padding-top:5%;
     padding-bottom: 1%;
+}
+
+input {
+    margin-top: 1%;
+}
+
+button {
+    margin: 1% 0%;
+    background-color: darkblue;
+    color: aliceblue;
+}
+
+footer {
+    /*For short pages the footer position is better absolute*/
+    position: absolute;
+    width: 100%;
 }
