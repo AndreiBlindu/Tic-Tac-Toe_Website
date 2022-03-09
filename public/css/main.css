@@ -28,6 +28,7 @@ header ul {
 a.nav-link {
     text-decoration: none;
     color: aliceblue;
+    display: inline-block;
 }
 
 header img.icon {
@@ -49,6 +50,11 @@ footer {
     padding: 1% 0%;
     background-color: darkblue;
     color: aliceblue;
+    text-align: center;
+}
+
+.social {
+    text-align: center;
 }
   
 /* Only if user's device screen is less than 680px */
