@@ -19,3 +19,9 @@ footer {
     position: absolute;
     width: 100%;
 }
+
+#signupError {
+    background-color: red;
+    color: aliceblue;
+    margin: 0% 25%;
+}

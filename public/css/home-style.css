@@ -52,6 +52,12 @@ ul {
     list-style: none;
 }
 
+video, .animated-gif {
+    height: 300px;
+    width: auto;
+    margin: 2%;
+}
+
 /* Only if user's device screen is less than 680px */
 @media only screen and (max-width: 680px) {
     .selling-points {

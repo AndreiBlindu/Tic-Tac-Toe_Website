@@ -14,8 +14,8 @@ exports.create = (req, res) => {
         res.send(user);
     }).catch(err => {
         // If there's an error in inserting the customer in the database
-        res.status(500).send({
-            message: err
+        res.status(409).send({
+            message: 'This username already exists, please choose another one'
         });
     });
 };
